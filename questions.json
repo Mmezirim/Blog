@@ -1,0 +1,21 @@
+{
+  "name": "Example Quiz",
+  "questions": [
+    {
+      "id": "name",
+      "text": "What is your name?",
+      "type": "text"
+    },
+    {
+      "id": "quest",
+      "text": "What is your quest?",
+      "type": "text"
+    },
+    {
+      "id": "col",
+      "text": "What is your favourite colour?",
+      "type": "text"
+    }
+  ]
+}
+

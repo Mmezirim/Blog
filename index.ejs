@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz App</h1>
+    <form action="/submit" method="post">
+      <% questions.forEach((question, index) => { %>
+        <h2><%= question.question %></h2>
+        <ul>
+          <% question.options.forEach((option, index) => { %>
+            <li>
+              <input type="radio" name="<%= question.id %>" value="<%= index %>">
+              <%= option %>
+            </li>
+          <% }); %>
+        </ul>
+      <% }); %>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+

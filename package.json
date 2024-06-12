@@ -1,0 +1,23 @@
+{
+  "name": "node-quiz",
+  "version": "1.0.0",
+  "description": "web3bridge mock test",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mmezirim/Quiz-app.git"
+  },
+  "keywords": [
+    "Quiz",
+    "App"
+  ],
+  "author": "Chimmezirim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mmezirim/Quiz-app/issues"
+  },
+  "homepage": "https://github.com/Mmezirim/Quiz-app#readme"
+}
