@@ -1,35 +1,30 @@
 const express = require('express');
+const bodyParser = require('body-parser')
 const app = express();
-const port = 3000;
-const bodyParser = require('body-parser');
 
 app.set('view engine', 'ejs');
+
 app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
-app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
-});
+const quizQuestions = require('./questions.json')
 
-// Load the quiz data
-const questions = require('./questions.json');
-
-// Define the quiz routes
 app.get('/', (req, res) => {
-  res.render('index', { questions });
+    res.render('index', { quizQuestions });
 });
 
 app.post('/submit', (req, res) => {
-  const answers = req.body;
-  let score = 0;
-
-  // Calculate the score
-  questions.forEach((question, index) => {
-    if (answers[question.id] === questions[index].correct) {
-      score++;
+    let score = 0;
+    for (let i = 0; i < quizQuestions.length; i++) {
+        const selectedOption = req.body[`option-${i}`];
+        if (selectedOption == quizQuestions[i].correctAnswer) {
+            score++;
+        }
     }
-  });
-
-  // Render the result page
-  res.render('result', { score, questions });
+    res.render('results', { score, totalQuestions: quizQuestions.length });
 });
-
+const port = 8080;
+app.listen(port, () => {
+    console.log('Server is running on port 8080');
+});

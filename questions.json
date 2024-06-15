@@ -1,21 +1,62 @@
-{
-  "name": "Example Quiz",
-  "questions": [
-    {
-      "id": "name",
-      "text": "What is your name?",
-      "type": "text"
-    },
-    {
-      "id": "quest",
-      "text": "What is your quest?",
-      "type": "text"
-    },
-    {
-      "id": "col",
-      "text": "What is your favourite colour?",
-      "type": "text"
-    }
-  ]
-}
-
+[
+        {
+            "question": "What is the capital of France?",
+            "options": ["Paris", "London", "Berlin"],
+            "correctAnswer": 0
+        },
+        {
+            "question": "What is the largest planet in our solar system?",
+            "options": ["Earth", "Saturn", "Jupiter"],
+            "correctAnswer": 2
+        },
+        {
+            "question": "What is the fourth word in the Nigerian national anthem?",
+            "options": ["We ", "Thee", "Nigeria"],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Which of these is not a programming language?",
+            "options": ["JavaScript", "Assembly", "Slow"],
+            "correctAnswer": 2
+        },
+        {
+            "question": "Which is the code name for POTUS?",
+            "options": ["Falcon", "Celtic", "Shield"],
+            "correctAnswer": 1
+        },
+        {
+            "question": "How many rotations can be found in three Earth revolutions?",
+            "options": ["1,095 ", "365", "72"],
+            "correctAnswer": 0
+        },
+        {
+            "question": "How many states are in America?",
+            "options": ["39", "50", "60"],
+            "correctAnswer": 1
+        },
+        {
+            "question": "How old is President Tinubu?",
+            "options": ["Old ", "Too old", "89"],
+            "correctAnswer": 1
+        },
+        {
+            "question": "Which part of Speech depicts thr word 'For'?",
+            "options": ["Conjunction ", "Ajective", "Preposition"],
+            "correctAnswer": 2
+        },
+        {
+            "question": "How many push ups can you do?",
+            "options": ["0 ", "10", "50"],
+            "correctAnswer": 0
+        },
+        {
+            "question": "Who is the most powerful Straw hat after Luffy?",
+            "options": ["Sanji ", "Zoro", "Jimbe"],
+            "correctAnswer": 1
+        },
+        {
+            "question": "How many milliseconds make up an hour?",
+            "options": ["6000000", "8400000", "3600000"],
+            "correctAnswer": 2
+        }
+]

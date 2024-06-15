@@ -1,23 +1,28 @@
 {
   "name": "node-quiz",
   "version": "1.0.0",
-  "description": "web3bridge mock test",
+  "description": "Quiz App",
   "main": "app.js",
   "scripts": {
-    "test": "npm start"
+    "test": "nodemon app"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mmezirim/Quiz-app.git"
   },
   "keywords": [
-    "Quiz",
-    "App"
+    "Quiz"
   ],
   "author": "Chimmezirim",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mmezirim/Quiz-app/issues"
   },
-  "homepage": "https://github.com/Mmezirim/Quiz-app#readme"
+  "homepage": "https://github.com/Mmezirim/Quiz-app#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.3"
+  }
 }
